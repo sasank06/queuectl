@@ -1,0 +1,5 @@
+{
+  "id": "ok1",
+  "command": "echo ok1",
+  "max_retries": 2
+}

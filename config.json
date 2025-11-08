@@ -1,6 +1,6 @@
 {
   "db_path": "data/jobs.db",
-  "backoff_base": 2,
+  "backoff_base": 3,
   "default_max_retries": 3,
   "worker_poll_interval": 1
 }
