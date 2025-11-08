@@ -15,7 +15,7 @@ QUEUECL stores jobs in SQLite, workers claim and execute them, failed jobs are r
 
 
 
-Insallation & implementation stteps:
+Insallation & setup:
 
 1. Clone repo and change to repo root.
 2. Create and activate virtualenv (follow these commands):
@@ -163,3 +163,11 @@ python -m queuectl.cli worker stop
 
 
 The outputs are present in output_vis folder in this repo.
+
+Checklist:
+
+Retry & DLQ implemented | ✅ | Backoff and DLQ proven by test outputs |
+No duplicate/race issues | ✅ | Multi-worker test (`--count 3`) completed all once |
+Data persistent | ✅ | SQLite `data/jobs.db` retains jobs after restart |
+Configurable | ✅ | Config file + `config set` CLI commands |
+Clear README | ✅ 
